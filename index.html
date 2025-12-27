@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarghoon Fertilizers | Agriculture Solutions</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f6f9f6;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(120deg, #1b5e20, #4caf50);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c8e6c9;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1598514982605-33a33f9d77b1') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            color: white;
+            max-width: 600px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .hero-content h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 14px 30px;
+            background: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2e7d32;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h3 {
+            font-size: 36px;
+            color: #1b5e20;
+        }
+
+        /* ABOUT */
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.4s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card h4 {
+            margin-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        /* WHY US */
+        .why-us {
+            background: #e8f5e9;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .why-item {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            .hero-content h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Zarghoon Fertilizers</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Growing Agriculture, Empowering Farmers</h2>
+        <p>Trusted supplier of fertilizers, seeds, pesticides, and modern agriculture solutions.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-title">
+        <h3>About Zarghoon Fertilizers</h3>
+    </div>
+    <div class="about">
+        <div>
+            <p>
+                Zarghoon Fertilizers is a professional agriculture business providing high-quality
+                fertilizers, seeds, pesticides, fungicides, and crop nutrition solutions.
+                We support farmers with modern knowledge, reliable products, and seasonal guidance.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae" alt="Agriculture">
+    </div>
+</section>
+
+<section id="products">
+    <div class="section-title">
+        <h3>Our Products & Services</h3>
+    </div>
+    <div class="products">
+        <div class="product-card">
+            <h4>Fertilizers</h4>
+            <p>Balanced nutrition for healthy crop growth.</p>
+        </div>
+        <div class="product-card">
+            <h4>Seeds</h4>
+            <p>High-yield and disease-resistant seeds.</p>
+        </div>
+        <div class="product-card">
+            <h4>Pesticides</h4>
+            <p>Effective insect and pest control solutions.</p>
+        </div>
+        <div class="product-card">
+            <h4>Crop Advisory</h4>
+            <p>Season-based guidance for farmers.</p>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="why-us">
+    <div class="section-title">
+        <h3>Why Choose Us</h3>
+    </div>
+    <div class="why-grid">
+        <div class="why-item">✔ Trusted Quality Products</div>
+        <div class="why-item">✔ Farmer-Focused Approach</div>
+        <div class="why-item">✔ Expert Agriculture Knowledge</div>
+        <div class="why-item">✔ Reliable Support</div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="section-title">
+        <h3>Contact Us</h3>
+    </div>
+    <p>📍 Balochistan, Pakistan</p>
+    <p>📞 +92-XXXXXXXXXX</p>
+    <p>📧 info@zarghoonfertilizers.com</p>
+</section>
+
+<footer>
+    <p>© 2025 Zarghoon Fertilizers | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
